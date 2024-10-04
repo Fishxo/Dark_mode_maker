@@ -1,0 +1,90 @@
+<html>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dark mode</title>
+  <head>
+    <title>dark mode</title>
+    <style>
+     #check{
+       margin-top: 105px;
+       align-items: center;
+       padding: 15px;
+       left: 20px;
+       width: 35px;
+       border: 1px solid black;
+       border-radius: 50px;
+       height: 5px;
+     }
+     #cir{
+       left: 50px;
+       background-color: black;
+       margin-bottom: 5000px;
+       margin-left: -30px;
+       margin-top: -15px;
+       border: 1px solid black;
+       border-radius: 50px;
+       width: 15px;
+       height: 15px;
+       padding: 10px;
+     }
+      button{
+        align-content: center;
+        align-items: center;
+        margin-left: 170px;
+      }
+      p{
+        font-family: serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1 style="background-color:silver">header</h1>
+    </center>
+      <button id="chang" onclick="changeBody()">light mode</button>
+      <p id="la"> this is simple dark and light mode changer</p>
+      <center>
+             <div type="checkbox" id="check">
+        <div id="cir" onclick="fun()" ></div>
+               
+               </div>
+      </center>
+  <script>
+ /*   function changeBody(){
+    
+  //  bodyElement.style.backgroundColor ="black";
+       
+    }*/
+    var chang = document.getElementById('chang');
+    var cir = document.getElementById('cir')
+          var bodyElement = document.body;
+           let islav = false ;
+          cir.addEventListener('click' , () =>{
+             islav = !islav ;
+             if(islav){
+               bodyElement.style.backgroundColor = "black"
+               bodyElement.style.transition = "5s"
+               ja.style.color = "white";
+               cir.style.backgroundColor ="white";
+               cir.style.marginLeft = "15px"
+               cir.style.transition = "3s";
+             }else{
+               bodyElement.style.backgroundColor ="white"
+               bodyElement.style.transition ="5s"
+               ja.style.color = "black"
+               cir.style.backgroundColor ="black"
+               cir.style.marginLeft = "-30px"
+               chang.style.innerHTML ="LIGHT MODE"
+             }
+            
+            
+            
+          })
+          
+          var ja = document.getElementById('la')
+
+  </script>
+  </body>
+</html>
